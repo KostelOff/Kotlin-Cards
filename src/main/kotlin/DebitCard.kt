@@ -1,9 +1,9 @@
 import kotlin.math.roundToInt
 
-abstract class DebitCard() : BankCard() {
+abstract class DebitCard : BankCard() {
 
     override fun replenishment(money: Double) {
-        ownFunds = ownFunds + money
+        ownFunds += money
     }
 
     override fun balanceInformation() {
